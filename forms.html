@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            /*height: 120vh;*/
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Detailed Form</title>
+</head>
+<body>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Interests:</label>
+        <input type="checkbox" id="interest1" name="interest1">
+        <label for="interest1">Reading</label>
+        <input type="checkbox" id="interest2" name="interest2">
+        <label for="interest2">Traveling</label>
+        <input type="checkbox" id="interest3" name="interest3">
+        <label for="interest3">Coding</label>
+
+        <label>Choose a programming language:</label>
+        <input type="radio" id="language1" name="language" value="html">
+        <label for="language1">HTML</label>
+        <input type="radio" id="language2" name="language" value="css">
+        <label for="language2">CSS</label>
+        <input type="radio" id="language3" name="language" value="javascript">
+        <label for="language3">JavaScript</label>
+
+        <label for="message">Additional Comments:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
